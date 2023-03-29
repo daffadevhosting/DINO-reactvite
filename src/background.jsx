@@ -3,7 +3,6 @@ import * as THREE from 'three';
 import {math} from './math.jsx';
 
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
-import {FBXLoader} from 'three/examples/jsm/loaders/FBXLoader.js';
 
 
 export const background = (() => {
@@ -21,7 +20,7 @@ export const background = (() => {
 
     LoadModel_() {
       const loader = new GLTFLoader();
-      loader.setPath('./src/resources/Clouds/GLTF/');
+      loader.setPath('./resources/Clouds/GLTF/');
       loader.load('Cloud' + math.rand_int(1, 3) + '.glb', (glb) => {
         this.mesh_ = glb.scene;
         this.params_.scene.add(this.mesh_);
@@ -99,11 +98,11 @@ export const background = (() => {
       const [asset, textureName, scale] = assets[math.rand_int(0, assets.length - 1)];
 
       const texLoader = new THREE.TextureLoader();
-      const texture = texLoader.load('./src/resources/DesertPack/Blend/Textures/' + textureName);
+      const texture = texLoader.load('./resources/DesertPack/Blend/Textures/' + textureName);
       texture.encoding = THREE.sRGBEncoding;
 
       const loader = new GLTFLoader();
-      loader.setPath('./src/resources/DesertPack/GLTF/');
+      loader.setPath('./resources/DesertPack/GLTF/');
       loader.load(asset, (glb) => {
         this.mesh_ = glb.scene;
         this.params_.scene.add(this.mesh_);

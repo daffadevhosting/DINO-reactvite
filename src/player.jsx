@@ -30,7 +30,7 @@ export const player = (() => {
 
     LoadModel_() {
       const loader = new FBXLoader();
-      loader.setPath('./src/resources/Dinosaurs/FBX/');
+      loader.setPath('./resources/Dinosaurs/FBX/');
       loader.load('Parasaurolophus.fbx', (fbx) => {
         fbx.scale.setScalar(0.0020);
         fbx.quaternion.setFromAxisAngle(

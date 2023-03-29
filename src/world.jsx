@@ -28,7 +28,7 @@ export const world = (() => {
       texture.encoding = THREE.sRGBEncoding;
 
       const loader = new FBXLoader();
-      loader.setPath('./src/resources/DesertPack/FBX/');
+      loader.setPath('./resources/DesertPack/FBX/');
       loader.load('Cactus3.fbx', (fbx) => {
         fbx.scale.setScalar(0.01);
 

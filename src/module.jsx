@@ -351,6 +351,14 @@ const div = document.createElement('div');
 div.className = 'btn-section';
 div.appendChild(startBtn);
 
+const a1 = document.createElement('p');
+a1.id = 'author';
+a1.textContent = 'DEVELOPED BY nDang';
+
+const div = document.createElement('div');
+div.className = 'author-section';
+div.appendChild(author);
+
 gameMenuWindow.appendChild(img);
 gameMenuWindow.appendChild(h1);
 gameMenuWindow.appendChild(p1);
@@ -358,6 +366,7 @@ gameMenuWindow.appendChild(li1);
 gameMenuWindow.appendChild(li2);
 gameMenuWindow.appendChild(li3);
 gameMenuWindow.appendChild(p2);
+gameMenuWindow.appendChild(a1);
 
 gameMenuLayout.appendChild(gameMenuWindow);
 gameMenuLayout.appendChild(div);

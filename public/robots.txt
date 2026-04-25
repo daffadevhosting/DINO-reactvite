@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dino-reactvite.vercel.app/sitemap.xml

@@ -347,17 +347,17 @@ const startBtn = document.createElement('button');
 startBtn.id = 'start-btn';
 startBtn.textContent = 'Play Game';
 
-const div = document.createElement('div');
-div.className = 'btn-section';
-div.appendChild(startBtn);
+const btnDiv = document.createElement('div');
+btnDiv.className = 'btn-section';
+btnDiv.appendChild(startBtn);
 
 const a1 = document.createElement('p');
 a1.id = 'author';
 a1.textContent = 'DEVELOPED BY nDang';
 
-const div = document.createElement('div');
-div.className = 'author-section';
-div.appendChild(author);
+const authorDiv = document.createElement('div');
+authorDiv.className = 'author-section';
+authorDiv.appendChild(a1);
 
 gameMenuWindow.appendChild(img);
 gameMenuWindow.appendChild(h1);
@@ -369,7 +369,8 @@ gameMenuWindow.appendChild(p2);
 gameMenuWindow.appendChild(a1);
 
 gameMenuLayout.appendChild(gameMenuWindow);
-gameMenuLayout.appendChild(div);
+gameMenuLayout.appendChild(btnDiv);
+gameMenuLayout.appendChild(authorDiv);
 ui3.appendChild(gameMenuLayout);
 
 container.appendChild(ui1);
